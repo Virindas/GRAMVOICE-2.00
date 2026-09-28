@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+.env
+.expo/
+*.zip
+mongodb_data/
+mongodb_local/
+scratch/
+.claude/
+*.log
