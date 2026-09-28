@@ -1,0 +1,16 @@
+name: E2E - Mobile Appium Tests
+on: [push]
+jobs:
+  mobile-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm install
+        working-directory: ./mobile/appium-tests
+      - run: node run_appium_tests.js
+        working-directory: ./mobile/appium-tests
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Appium_E2E_Test_Report
+          path: mobile/appium-tests/Appium_E2E_Test_Report.xlsx
