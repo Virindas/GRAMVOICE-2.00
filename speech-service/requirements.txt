@@ -1,3 +1,0 @@
-# Pretrained Whisper Speech Service Dependencies
-# Note: Whisper and Flask/FastAPI dependencies will be added in a later phase.
-# Do not download or train any model during Phase 1.
